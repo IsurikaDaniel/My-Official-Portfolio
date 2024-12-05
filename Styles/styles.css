@@ -197,36 +197,6 @@ p{
 }
 
 /* word animathion */
-/* .text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-    position: relative;
-}
-
-.text-animation span {
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid var(--main-color);
-    animation: typing 3s steps(20, end), blink 0.6s step-end infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-} */
 .text-animation {
     font-size: 34px;
     font-weight: 600;
@@ -243,3 +213,81 @@ p{
         border-color: transparent;
     }
 }
+
+/* education page */
+
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 2rem 0; /* Reduce the margin */
+    position: relative; /* Use relative positioning */
+    top: 0; /* Position at the top of its container */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.educationpage{
+   padding: 100px 15px;
+   background: var(--second-bg-color);
+}
+.educationpage h2{
+    margin-bottom: 5rem;
+}
+.timeline-items{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+    top: 0;
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+    text-align: left;
+}
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    box-shadow: 0 0 25px var(--main-color),
+               0 0 50px var(--main-color);
+    border-radius: 50%;
+    top: 10px;
+}
+.timeline-date{
+    font-size:20px;
+    font-weight: 500;
+    color: #fff;
+    margin:6px 0 15px;
+}
+.timeline-content{
+ background-color: var(--bg-color);
+ border: 3px solid var(--main-color);
+ padding: 30px 50px;
+ border-radius: 4rem;
+ box-shadow: 0 0 10px var(--main-color);
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+}
+
