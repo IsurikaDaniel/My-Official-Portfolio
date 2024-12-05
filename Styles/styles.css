@@ -22,6 +22,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+/* header section (navbar) */
 .header{
     position: fixed;
     top: 0;
@@ -67,6 +68,8 @@ body{
     cursor: pointer;
     display: none;
 }
+
+/* Home page styles (section part) */
 section {
     min-height: 100vh;
     display: flex;
@@ -74,7 +77,10 @@ section {
     justify-content: center;
     padding: 0 2rem;
 }
-
+p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
 .home-container {
     display: flex;
     align-items: center;
@@ -188,4 +194,52 @@ section {
 
 .home-img img:hover {
     box-shadow: 0 0 30px var(--main-color), 0 0 60px var(--main-color);
+}
+
+/* word animathion */
+/* .text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    position: relative;
+}
+
+.text-animation span {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--main-color);
+    animation: typing 3s steps(20, end), blink 0.6s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+} */
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    position: relative;
+}
+#typing-text {
+    border-right: 2px solid var(--main-color);
+    padding-right: 5px;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        border-color: transparent;
+    }
 }
