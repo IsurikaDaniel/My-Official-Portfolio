@@ -72,14 +72,17 @@ body{
 /* Home page styles (section part) */
 section {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
+    padding: 10rem 12% 10rem;
 }
 p{
     font-size: 1.6rem;
     color: var(--text-color);
+}
+.homepage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
 }
 .home-container {
     display: flex;
@@ -91,29 +94,29 @@ p{
 }
 
 .home-content {
-    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: center;
-    text-align: auto;
+    margin-top: 3rem;
 }
 
 .home-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    line-height: 1;
+    margin-top: 1.5rem;
 }
 
 .home-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     color: var(--main-color);
 }
 
 .home-content p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     max-width: 600px;
     margin-bottom: 2rem;
@@ -133,7 +136,7 @@ p{
     height: 50px;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--main-color);
     transition: transform 0.3s, background-color 0.3s;
 }
@@ -146,14 +149,14 @@ p{
 
 .btn-group {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .btn {
-    padding: 0.8rem 2rem;
+    padding: 1.2rem 3rem;
     border-radius: 30px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 700;
     text-decoration: none;
     transition: 0.3s ease;
     background-color: var(--main-color);
@@ -317,3 +320,4 @@ p{
     border-radius: 50px;
 }
 
+/* service page styles */
