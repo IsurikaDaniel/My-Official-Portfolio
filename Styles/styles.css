@@ -435,12 +435,12 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
-.testimonial-item {
-  min-height: 600px;
-  max-width: 600px;
+.project-item {
+  min-height: 550px;
+  max-width: 450px;
   background: rgba(0, 0, 0, 0.7);
   border: 3px solid rgba(238, 238, 238, 0.2);
-  border-radius: 10px;
+  border-radius: 2rem;
   margin: 0 2rem;
   padding: 30px 60px;
   cursor: pointer;
@@ -452,4 +452,19 @@ p {
   gap: 1.5rem;
   color: #fff;
   transition: 0.4s ease-in-out;
+}
+.project-item :hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 50px var(--main-color);
+}
+.project-item h2 {
+  font-size: 2.8rem;  
+}
+.project-item p {
+  font-size: 1.3rem;
+}
+#star{
+    color: rgb(219, 188, 14);
+    font-size: 2rem;
 }
